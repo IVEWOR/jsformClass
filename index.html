@@ -83,12 +83,15 @@
         if (inputName.value.length == 0) {
           document.getElementById("error").innerHTML =
             "<div class=' alert alert-danger'>Please enter the Name</div>";
+          inputName.focus();
         } else if (inputLang.value.length == 0) {
           document.getElementById("error").innerHTML =
             "<div class=' alert alert-danger'>Please enter the Language</div>";
+          inputLang.focus();
         } else if (inputGame.value == "none") {
           document.getElementById("error").innerHTML =
             "<div class=' alert alert-danger'>Please select the Game</div>";
+          inputGame.focus();
         } else {
           if (inputGame.value == "CS:GO") {
             document.getElementById("output").innerHTML +=
